@@ -1,0 +1,1 @@
+pyinstaller --onefile --windowed --name "FileExplorer" --clean --exclude-module tkinter --exclude-module matplotlib --exclude-module numpy --exclude-module pandas --exclude-module scipy --upx-dir "C:\Program Files\upx-5.0.2-win64" file_explorer.py
