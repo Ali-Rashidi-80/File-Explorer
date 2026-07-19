@@ -2,3 +2,10 @@
 /debug.log
 /dist
 /FileExplorer.spec
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cursor/
+*.egg-info/

@@ -1,0 +1,9 @@
+[MAIN]
+ignore=file_explorer.py,build,dist
+
+[MESSAGES CONTROL]
+# PySide6 ships binary extensions; pylint often cannot resolve Qt symbols.
+disable=import-error,no-name-in-module
+
+[FORMAT]
+max-line-length=100
