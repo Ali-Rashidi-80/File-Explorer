@@ -1,5 +1,5 @@
 # Portable onefile (recommended) — same as build.bat / build_portable.bat
-python -m PyInstaller --noconfirm --clean FileExplorer.portable.spec
+python -m PyInstaller --noconfirm FileExplorer.portable.spec
 
 # Output:
 #   dist\FileExplorer_Portable.exe
