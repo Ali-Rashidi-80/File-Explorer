@@ -2,3 +2,13 @@
 /debug.log
 /dist
 /FileExplorer.spec
+/tools/upx/
+/tools/upx.zip
+/tools/upx_tmp/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cursor/
+*.egg-info/
