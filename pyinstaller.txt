@@ -3,3 +3,5 @@ python -m PyInstaller --noconfirm FileExplorer.portable.spec
 
 # Output:
 #   dist\FileExplorer_Portable.exe
+
+# Docs: docs/BUILD.md  |  docs/BUILD.fa.md  |  README.md

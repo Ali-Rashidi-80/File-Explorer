@@ -1,15 +1,20 @@
 File Explorer 5.1 — Quick install / build
 ========================================
 
+Full docs (English default): README.md
+فارسی: README.fa.md
+
 Run from source:
   pip install -r requirements.txt
   python file-explorer-pyside6.py
 
 Portable single-file EXE (recommended):
   build_portable.bat
-  or:  build.bat
+    or:  build.bat
   →  dist\FileExplorer_Portable.exe
+  Details: docs\BUILD.md  |  docs\BUILD.fa.md
 
 QA:
   pip install -r requirements-dev.txt
   qa.bat
+  Details: CONTRIBUTING.md  |  CONTRIBUTING.fa.md
