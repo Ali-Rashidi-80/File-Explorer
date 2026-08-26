@@ -1,17 +1,36 @@
-# File Explorer _(Smart Project Explorer)_
+# File Explorer
 
-[![Version](https://img.shields.io/badge/version-5.1.0-0ea5e9?style=flat-square)](CHANGELOG.md)
-[![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![PySide6](https://img.shields.io/badge/UI-PySide6-41CD52?style=flat-square&logo=qt&logoColor=white)](https://doc.qt.io/qtforpython/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-yellow?style=flat-square)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows-0078D4?style=flat-square&logo=windows&logoColor=white)](#prerequisites)
-[![QA](https://img.shields.io/badge/QA-pytest%20%7C%20ruff%20%7C%20mypy%20%7C%20bandit-111827?style=flat-square)](CONTRIBUTING.md#quality-gate)
+<p align="center">
+  <img src="docs/assets/file-explorer-logo.png" alt="File Explorer" width="180" height="180" />
+</p>
 
-**Languages:** **English** · [فارسی](README.fa.md)
+<p align="center">
+<strong>English</strong> · <a href="README.fa.md">فارسی</a>
+</p>
 
-> Desktop utility that scans a project folder into clean **TXT** or **JSON** maps, and can reverse-rebuild an **empty** folder/file tree from those maps — with path guards, memory caps, and safe worker threads.
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![PySide6](https://img.shields.io/badge/UI-PySide6-41CD52.svg)](https://doc.qt.io/qtforpython/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-5.1.0-informational.svg)](pyproject.toml)
+[![Platform](https://img.shields.io/badge/platform-Windows-0078D4.svg)](#prerequisites)
 
-**Quick nav:** [Why](#why) · [Features](#features) · [Architecture](#architecture) · [Quick start](#quick-start) · [Usage](#usage) · [Build EXE](#portable-exe-build) · [Docs](#documentation) · [Security](#security) · [Contributing](#contributing)
+> **Smart Project Explorer** — desktop utility that scans a project folder into clean **TXT**/**JSON** maps and reverse-rebuilds an **empty** folder/file scaffold — with path guards, size caps, and a PySide6 RTL UI.
+
+**Quick links:** [Quick Start](#quick-start) · [Architecture](#architecture) · [Features](#features) · [Docs](docs/README.md) · [فارسی](README.fa.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [License](#license)
+
+---
+
+## What it is
+
+**File Explorer** (کاوشگر هوشمند پروژه) is a Windows-first desktop app for:
+
+1. **Project mapping** — walk a folder and export a readable tree (**structure**) or a full text/code dump (**full**).
+2. **Scaffold reverse** — rebuild **empty** directories and files from a prior TXT/JSON map (no content restore).
+3. **Safe defaults** — path traversal guards, symlink skip, ignored heavy dirs, and memory caps (10 MB/file, 50 MB total).
+
+Built for developers and reviewers who need a **shareable project map** or an **empty tree scaffold** without shipping the whole repo.
+
+Created by **Ali Rashidi**.
 
 ---
 
@@ -261,7 +280,7 @@ D:\demo_project
 File Explorer/
 ├── file-explorer-pyside6.py   # Active PySide6 app (v5.1)
 ├── file_explorer.py           # Legacy PyQt6 script (not used by build)
-├── icon.ico
+├── icon.ico                   # App / EXE icon (source logo)
 ├── requirements.txt
 ├── requirements-dev.txt
 ├── pyproject.toml             # black / ruff / mypy / pytest config
@@ -270,6 +289,7 @@ File Explorer/
 ├── FileExplorer.portable.spec # PyInstaller onefile
 ├── tests/                     # Core + live E2E + production live
 ├── docs/                      # Extended documentation (EN + FA)
+│   └── assets/file-explorer-logo.png  # Logo for README (from icon.ico)
 ├── README.md                  # This file (English default)
 ├── README.fa.md               # Persian README
 ├── LICENSE
@@ -396,7 +416,7 @@ Full guide: [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) · [docs/TROUBLES
 
 - [ ] Optional content restore for reverse (explicit opt-in, size-capped)
 - [ ] Non-Windows CI matrix for source runs
-- [ ] Screenshot / GIF demo assets under `docs/images/`
+- [ ] UI screenshot / GIF demo under `docs/assets/` (app logo already present)
 - [ ] GitHub Actions workflow mirroring `qa.bat`
 
 Honest status: **v5.1 is the bulletproof polish** of scan/reverse/safety/QA — see [CHANGELOG.md](CHANGELOG.md).
@@ -422,7 +442,7 @@ Questions → [GitHub Issues](https://github.com/Ali-Rashidi-80/File-Explorer/is
 - [PySide6 / Qt for Python](https://doc.qt.io/qtforpython/)
 - [PyInstaller](https://pyinstaller.org/)
 - [pytest](https://pytest.org/) & [pytest-qt](https://pytest-qt.readthedocs.io/)
-- README craft informed by [Standard Readme](https://github.com/RichardLitt/standard-readme), [banger-readme anatomy](https://github.com/kerryhatcher/banger-readme/blob/main/docs/anatomy-of-a-readme.md), and [OSS Spec](https://github.com/niclaslindstedt/oss-spec)
+- README layout aligned with the house style of [rashid-agent](https://github.com/Ali-Rashidi-80/rashid-agent), plus [Standard Readme](https://github.com/RichardLitt/standard-readme) and [OSS Spec](https://github.com/niclaslindstedt/oss-spec)
 
 ---
 

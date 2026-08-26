@@ -1,17 +1,36 @@
-# File Explorer _(کاوشگر هوشمند پروژه)_
+# کاوشگر هوشمند پروژه | File Explorer
 
-[![Version](https://img.shields.io/badge/version-5.1.0-0ea5e9?style=flat-square)](CHANGELOG.fa.md)
-[![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![PySide6](https://img.shields.io/badge/UI-PySide6-41CD52?style=flat-square&logo=qt&logoColor=white)](https://doc.qt.io/qtforpython/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-yellow?style=flat-square)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows-0078D4?style=flat-square&logo=windows&logoColor=white)](#پیش‌نیازها)
-[![QA](https://img.shields.io/badge/QA-pytest%20%7C%20ruff%20%7C%20mypy%20%7C%20bandit-111827?style=flat-square)](CONTRIBUTING.fa.md)
+<p align="center">
+  <img src="docs/assets/file-explorer-logo.png" alt="کاوشگر هوشمند پروژه" width="180" height="180" />
+</p>
 
-**زبان‌ها:** [English](README.md) · **فارسی**
+<p align="center">
+<a href="README.md">English</a> · <strong>فارسی</strong>
+</p>
 
-> ابزار دسکتاپ برای اسکن پوشهٔ پروژه و تولید نقشهٔ تمیز **TXT** یا **JSON**، و بازسازی معکوس درخت **خالی** پوشه/فایل از همان نقشه‌ها — با نگهبان مسیر، سقف حافظه، و تردهای ایمن.
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![PySide6](https://img.shields.io/badge/UI-PySide6-41CD52.svg)](https://doc.qt.io/qtforpython/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-5.1.0-informational.svg)](pyproject.toml)
+[![Platform](https://img.shields.io/badge/platform-Windows-0078D4.svg)](#پیش‌نیازها)
 
-**ناوبری سریع:** [چرا](#چرا) · [ویژگی‌ها](#ویژگی‌ها) · [معماری](#معماری) · [شروع سریع](#شروع-سریع) · [استفاده](#استفاده) · [ساخت EXE](#ساخت-exe-قابل-حمل) · [مستندات](#مستندات) · [امنیت](#امنیت) · [مشارکت](#مشارکت)
+> **کاوشگر هوشمند پروژه** — ابزار دسکتاپ برای اسکن پوشه به نقشهٔ تمیز **TXT**/**JSON** و بازسازی اسکلت **خالی** پوشه/فایل — با نگهبان مسیر، سقف اندازه، و رابط PySide6 راست‌به‌چپ.
+
+**پیوندهای سریع:** [شروع سریع](#شروع-سریع) · [معماری](#معماری) · [ویژگی‌ها](#ویژگی‌ها) · [مستندات](docs/README.fa.md) · [English](README.md) · [مشارکت](CONTRIBUTING.fa.md) · [امنیت](SECURITY.fa.md) · [مجوز](#مجوز)
+
+---
+
+## این پروژه چیست؟
+
+**File Explorer (کاوشگر هوشمند پروژه)** یک اپ دسکتاپ ویندوزمحور برای این کارهاست:
+
+1. **نقشه‌برداری پروژه** — پیمایش پوشه و خروجی درخت (**ساختار**) یا dump کامل متن/کد (**کامل**).
+2. **بازسازی اسکلت** — ساخت مجدد پوشه و فایل **خالی** از نقشهٔ TXT/JSON قبلی (بدون بازگردانی محتوا).
+3. **پیش‌فرض‌های ایمن** — نگهبان path traversal، رد symlink، نادیده گرفتن پوشه‌های سنگین، و سقف حافظه (۱۰ مگ/فایل، ۵۰ مگ کل).
+
+برای توسعه‌دهندگان و بازبین‌هایی که به **نقشهٔ قابل اشتراک** یا **اسکلت خالی درخت** نیاز دارند، بدون ارسال کل ریپو.
+
+ساخته‌شده توسط **علی رشیدی**.
 
 ---
 
@@ -219,13 +238,14 @@ qa.bat
 File Explorer/
 ├── file-explorer-pyside6.py   # اپ فعال PySide6 (v5.1)
 ├── file_explorer.py           # اسکریپت میراث PyQt6
-├── icon.ico
+├── icon.ico                   # آیکون اپ / EXE (لوگوی منبع)
 ├── requirements.txt / requirements-dev.txt
 ├── pyproject.toml
 ├── qa.bat / build.bat / build_portable.bat
 ├── FileExplorer.portable.spec
 ├── tests/
 ├── docs/                      # مستندات گسترده (EN + FA)
+│   └── assets/file-explorer-logo.png  # لوگو برای README (از icon.ico)
 ├── README.md                  # انگلیسی (پیش‌فرض)
 ├── README.fa.md               # همین فایل
 ├── LICENSE / CHANGELOG*.md
@@ -322,7 +342,7 @@ flowchart TD
 
 - [ ] بازگردانی اختیاری محتوا در reverse (opt-in صریح + سقف اندازه)
 - [ ] ماتریس CI غیر ویندوز برای اجرای سورس
-- [ ] اسکرین/GIF در `docs/images/`
+- [ ] اسکرین/GIF از UI در `docs/assets/` (لوگوی اپ از قبل موجود است)
 - [ ] GitHub Actions هم‌تراز با `qa.bat`
 
 وضعیت صادقانه: **v5.1 پولیش ضدگلوله** برای اسکن/بازسازی/ایمنی/QA است — [CHANGELOG.fa.md](CHANGELOG.fa.md).
@@ -348,7 +368,7 @@ PRها خوش‌آمدند. [CONTRIBUTING.fa.md](CONTRIBUTING.fa.md) و منشو
 - [PySide6 / Qt for Python](https://doc.qt.io/qtforpython/)
 - [PyInstaller](https://pyinstaller.org/)
 - [pytest](https://pytest.org/) و [pytest-qt](https://pytest-qt.readthedocs.io/)
-- ساختار README الهام‌گرفته از [Standard Readme](https://github.com/RichardLitt/standard-readme)، [anatomy-of-a-readme](https://github.com/kerryhatcher/banger-readme/blob/main/docs/anatomy-of-a-readme.md) و [OSS Spec](https://github.com/niclaslindstedt/oss-spec)
+- چیدمان README هم‌تراز با سبک خانهٔ [rashid-agent](https://github.com/Ali-Rashidi-80/rashid-agent)، به‌همراه [Standard Readme](https://github.com/RichardLitt/standard-readme) و [OSS Spec](https://github.com/niclaslindstedt/oss-spec)
 
 ---
 

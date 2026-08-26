@@ -9,5 +9,6 @@
 | ساخت | [BUILD.md](BUILD.md) | [BUILD.fa.md](BUILD.fa.md) |
 | API | [API.md](API.md) | [API.fa.md](API.fa.md) |
 | عیب‌یابی | [TROUBLESHOOTING.md](TROUBLESHOOTING.md) | [TROUBLESHOOTING.fa.md](TROUBLESHOOTING.fa.md) |
+| دارایی برند | [assets/file-explorer-logo.png](assets/file-explorer-logo.png) (از `icon.ico`) | — |
 
 ریشه: [../README.fa.md](../README.fa.md) · [../CONTRIBUTING.fa.md](../CONTRIBUTING.fa.md) · [../SECURITY.fa.md](../SECURITY.fa.md) · [../CHANGELOG.fa.md](../CHANGELOG.fa.md)

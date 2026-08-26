@@ -9,5 +9,6 @@
 | Build (portable EXE) | [BUILD.md](BUILD.md) | [BUILD.fa.md](BUILD.fa.md) |
 | API helpers | [API.md](API.md) | [API.fa.md](API.fa.md) |
 | Troubleshooting | [TROUBLESHOOTING.md](TROUBLESHOOTING.md) | [TROUBLESHOOTING.fa.md](TROUBLESHOOTING.fa.md) |
+| Brand assets | [assets/file-explorer-logo.png](assets/file-explorer-logo.png) (from `icon.ico`) | — |
 
 Root docs: [../README.md](../README.md) · [../README.fa.md](../README.fa.md) · [../CONTRIBUTING.md](../CONTRIBUTING.md) · [../SECURITY.md](../SECURITY.md) · [../CHANGELOG.md](../CHANGELOG.md) · [../AGENTS.md](../AGENTS.md)
